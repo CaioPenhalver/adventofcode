@@ -34,7 +34,7 @@ func countIncreases(input []int) int {
 }
 
 func getInput() (string, error) {
-  input, err := os.ReadFile("./input.txt")
+  input, err := os.ReadFile("../input.txt")
   if err != nil {
     return "", err
   }
