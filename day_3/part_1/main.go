@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-  input, err := getInput("./input.txt")
+  input, err := getInput("../input.txt")
   checkError(err)
 
   processedInput, err := processInput(input)
@@ -20,6 +20,8 @@ func main() {
 
   gr := findGammaRate(ones, threshold)
   er := findEpsilonRate(ones, threshold)
+  fmt.Println(gr)
+  fmt.Println(er)
 
   m, err := multiply(gr, er)
   checkError(err)
